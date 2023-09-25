@@ -1,0 +1,217 @@
+/* Utils */
+
+:root{
+    --primary-color: #e76f51;
+    --secondary-color: #2a9d8f;
+    --light-color: #f8f9fa;
+    --dark-color: #5a5f64;
+    --max-width:1250px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 10px;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+a{
+    color: var(--dark-color);
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+h1, h2, h3, h4, h5 ,h6{
+    font-family: 'Roboto';
+    margin: .7rem;
+    line-height: 1.3;
+    color: var(--dark2-color);
+}
+
+p{
+    margin: .5rem 0;
+}
+
+.container{
+    max-width: var(--max-width) ;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+    text-align: center;
+}
+
+.container2{
+    max-width: 1000px ;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+    text-align: center;
+}
+
+
+/* Style */
+
+
+/* head */
+.head > .container  h5{
+    max-width: 20rem;
+    margin: 0 auto;
+    padding-bottom: 1.4rem;
+    border-bottom: .2rem solid #B18463;
+
+}
+
+.head > .container  h1{
+    color:#B18463 ;
+}
+
+
+/* Main-content */
+.main-content{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+
+
+/* Card Img */
+.bg-1{
+    background:
+    linear-gradient(to bottom, rgba(255, 64, 64, 0), rgba(0, 0, 0, 0.74)),
+    url(https://images.pexels.com/photos/10041264/pexels-photo-10041264.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+}
+.bg-2{
+    background:
+    linear-gradient(to bottom, rgba(255, 64, 64, 0), rgba(0, 0, 0, 0.74)),
+    url(https://images.pexels.com/photos/4195342/pexels-photo-4195342.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+}
+.bg-3{
+    background:
+    linear-gradient(to bottom, rgba(255, 64, 64, 0), rgba(0, 0, 0, 0.74)),
+    url(https://images.pexels.com/photos/10041258/pexels-photo-10041258.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+}
+.bg-4{
+    background:
+    linear-gradient(to bottom, rgba(255, 64, 64, 0), rgba(0, 0, 0, 0.74)),
+    url(https://images.pexels.com/photos/13801614/pexels-photo-13801614.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+}
+
+.bg-5{
+    background:
+    linear-gradient(to bottom, rgba(255, 64, 64, 0), rgba(0, 0, 0, 0.74)),
+    url(https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+}
+
+.bg-6{
+    background:
+    linear-gradient(to bottom, rgba(255, 64, 64, 0), rgba(0, 0, 0, 0.74)),
+    url(https://images.pexels.com/photos/6749773/pexels-photo-6749773.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+}
+
+
+/* Card  */
+.card{
+    background-repeat: no-repeat;
+    background-size:cover ;
+    background-position: center;
+    width: 40rem;
+    height:60rem;
+    display: flex;
+    transition: transform .3s;
+}
+
+.card:hover{
+    transform: scale(110%);
+}
+
+.card-items{
+    width: 100%;
+    align-self: flex-end;
+    padding: 2rem 3rem; 
+    text-align: left;
+}
+
+.card-items .card-item h5, h3{
+    color:white ;
+}
+
+.card-items .card-item:first-child{
+    color:white ;
+    font-family: Roboto;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2rem;
+    
+}
+
+.card-items .card-item p {
+    color:white ;
+    font-family: Roboto;
+    font-size: 2.4rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2.8rem;
+    padding-bottom: 1rem;
+}
+
+
+.card-items .card-item:last-child{
+    color:#B18463 ;
+    border: 1px solid #B18463;
+    border-radius: 2rem;
+    padding:  .6rem .9rem;
+}
+
+
+/* Mobile */
+
+@media(max-width: 767px){
+    .main-content{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        justify-content: center;        
+    }
+
+
+    .container{
+        margin: 0 auto;
+        padding: 3rem 5rem;
+        text-align: center;   
+        max-width: 30rem ;
+
+    }
+
+    .card{
+        background-repeat: no-repeat;
+        background-size:cover ;
+        background-position: center;
+        width: 30rem;
+        height:50rem;
+    }
+
+    .card:hover{
+        transform: scale(100%);
+
+    }
+
+    .container2{
+        max-width: 34rem ;
+        margin: 0 auto;
+        padding: 3rem 2rem;
+        text-align: center;
+    }
+}
+
